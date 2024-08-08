@@ -16,7 +16,7 @@
 /**
  * @template {readonly JoinableItem[]} Items
  * @template {string} Delimiter
- * @typedef {Items extends readonly []
+ * @typedef {Items extends readonly unknown[]
  * 	? ""
  * 	: Items extends readonly [JoinableItem?]
  * 		? `${NullishCoalesce<Items[0], "">}`
