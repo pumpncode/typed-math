@@ -11,9 +11,9 @@
 /**
  * @import { GtOrEq, Gt, Add } from "ts-arithmetic";
  * @import { Round } from "@/library/_common/round.doc.js";
- * @import { DivideByPowerOfTen } from "./divide-by-power-of-ten.doc.js";
- * @import { MultiplyByPowerOfTen } from "./multiply-by-power-of-ten.doc.js";
- * @import { StringToArray } from "./string-to-array.doc.js";
+ * @import { DivideByPowerOfTen } from "./_common/divide-by-power-of-ten.doc.js";
+ * @import { MultiplyByPowerOfTen } from "./_common/multiply-by-power-of-ten.doc.js";
+ * @import { StringToArray } from "@/type-party/_exports.js";
  * @import { SliceToPrecision } from "./round-to-precision/_exports.js";
  */
 
@@ -22,7 +22,7 @@
  * @template {number} PrecisionTemplate
  * @typedef {(
  * GtOrEq<PrecisionTemplate, 0> extends 1
- * 	? `${NumberTemplate}` extends `${infer IntegerPartTemplate extends string}.${infer DecimalPartTemplate extends string}`
+ * 	? `${NumberTemplate}` extends `${string}.${infer DecimalPartTemplate extends string}`
  * 		? Gt<StringToArray<DecimalPartTemplate>["length"], PrecisionTemplate> extends 1
  * 			? DivideByPowerOfTen<
  * 				Round<

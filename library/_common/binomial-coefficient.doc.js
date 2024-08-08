@@ -10,8 +10,9 @@
 
 /**
  * @import { Divide, Subtract, Add, Multiply, Pow } from "ts-arithmetic";
- * @import { Product, PositiveIntegersUpTo, RoundToPrecision } from "./_common/_exports.js";
+ * @import { Product, PositiveIntegersUpTo } from "./_common/_exports.js";
  * @import { Sum } from "./sum.doc.js";
+ * @import { RoundToPrecision } from "./round-to-precision.doc.js";
  */
 
 /**

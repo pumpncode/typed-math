@@ -21,9 +21,6 @@
 		"strictNullChecks": true,
 		"strict": true
 	},
-	"include": [
-		"./**/*"
-	],
 	"exclude": [
 		"node_modules"
 	]

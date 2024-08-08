@@ -12,7 +12,7 @@
  * @import { SqrtOfOneHalf } from "@/library/sqrt-of-one-half.doc.js";
  * @import { SqrtOfTwo } from "@/library/sqrt-of-two.doc.js";
  * @import { Lt, Divide, Multiply, Add, Eq, Subtract } from "ts-arithmetic";
- * @import { RoundToPrecision } from "./_common/_exports.js";
+ * @import { RoundToPrecision } from "./round-to-precision.doc.js";
  */
 
 /**
@@ -46,10 +46,12 @@
  * @template {number} Low
  * @template {number} High
  * @typedef {(
- *     Lt<Subtract<High, Low>, 0.00000001> extends 1
- *         ? RoundToPrecision<Divide<Add<High, Low>, 2>, 8>
- *         : SqrtIteration<N, Low, High>
- * )} SqrtHelper
+ *     Eq<Multiply<Mid<Low, High>, Mid<Low, High>>, N> extends 1
+ *         ? Mid<Low, High>
+ *         : Lt<Multiply<Mid<Low, High>, Mid<Low, High>>, N> extends 1
+ *             ? SqrtHelper<N, Mid<Low, High>, High>
+ *             : SqrtHelper<N, Low, Mid<Low, High>>
+ * )} SqrtIteration
  */
 
 /**
@@ -57,12 +59,10 @@
  * @template {number} Low
  * @template {number} High
  * @typedef {(
- *     Eq<Multiply<Mid<Low, High>, Mid<Low, High>>, N> extends 1
- *         ? Mid<Low, High>
- *         : Lt<Multiply<Mid<Low, High>, Mid<Low, High>>, N> extends 1
- *             ? SqrtHelper<N, Mid<Low, High>, High>
- *             : SqrtHelper<N, Low, Mid<Low, High>>
- * )} SqrtIteration
+ *     Lt<Subtract<High, Low>, 0.00000001> extends 1
+ *         ? RoundToPrecision<Divide<Add<High, Low>, 2>, 8>
+ *         : SqrtIteration<N, Low, High>
+ * )} SqrtHelper
  */
 
 /**

@@ -10,7 +10,7 @@
 
 /**
  * @import { Lt, Divide, Multiply, Add, Eq, Subtract } from "ts-arithmetic";
- * @import { RoundToPrecision } from "@/library/_common/_common/round-to-precision.doc.js";
+ * @import { RoundToPrecision } from "@/library/_common/round-to-precision.doc.js";
  */
 
 /**

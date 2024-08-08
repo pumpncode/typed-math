@@ -33,7 +33,8 @@
 	},
 	"importMap": "./import-map.json",
 	"exclude": [
-		"**/_fresh/*"
+		"**/_fresh/*",
+		"node_modules"
 	],
 	"test": {
 		"exclude": [

@@ -12,7 +12,7 @@
  * @import { Pow as IntegerPow, Multiply, Divide, IsInt, Eq, Subtract, Add } from "ts-arithmetic";
  * @import { Log } from "./log.doc.js";
  * @import { Factorial } from "./factorial.doc.js";
- * @import { RoundToPrecision } from "@/library/_common/_common/round-to-precision.doc.js";
+ * @import { RoundToPrecision } from "./round-to-precision.doc.js";
  */
 
 /**

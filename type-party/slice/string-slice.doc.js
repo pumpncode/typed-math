@@ -9,9 +9,9 @@
 */
 
 /**
- * @import { StringToArray } from "@/library/_common/_common/string-to-array.doc.js";
- * @import { ArraySlice } from "./string-slice/_exports.js";
- * @import { Join } from "@/library/_common/_common/_common/join.doc.js";
+ * @import { StringToArray } from "@/type-party/string-to-array.doc.js";
+ * @import { ArraySlice } from "@/type-party/_common/array-slice.doc.js";
+ * @import { Join } from "@/type-party/join.doc.js";
  */
 
 /**

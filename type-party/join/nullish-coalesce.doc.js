@@ -9,7 +9,7 @@
 */
 
 /**
- * @import { JoinableItem } from  "@/library/_common/_common/_common/_common/joinable-item.doc.js";
+ * @import { JoinableItem } from  "@/type-party/_common/joinable-item.doc.js";
  */
 
 /**

@@ -10,19 +10,7 @@
 
 /**
  * @import { Add, Multiply, Pow } from "ts-arithmetic";
- */
-
-/**
- * @template {readonly any[]} T
- * @template {number} N
- * @template {readonly any[]} [Swap=[]]
- * @typedef {(
- * Swap["length"] extends N
- * 	? [Swap, ...Chunk<T, N>]
- * 	: T extends readonly [infer K, ...infer L]
- * 		? Chunk<L, N, readonly [...Swap, K]>
- * 		: Swap extends readonly [] ? Swap : readonly [Swap]
- * )} Chunk
+ * @import { Chunk } from "./_common/_exports.js";
  */
 
 /**
@@ -30,10 +18,10 @@
  * @typedef {(
  * T extends readonly [infer Head, ...infer Tail]
  * 	? Head extends number
- * 		? Add<Head, AddChunks<Tail>>
+ * 		? Add<Head, AlternatingSumChunks<Tail>>
  * 		: never
  * 	: 0
- * )} AddChunks
+ * )} AlternatingSumChunks
  */
 
 /**
@@ -58,7 +46,7 @@
  *   	? 0
  *   	: Chunk<T, N> extends infer C
  *   		? C extends readonly any[]
- *   			? AddChunks<{
+ *   			? AlternatingSumChunks<{
  *   				[K in keyof C]: C[K] extends readonly number[] ? AlternatingSumHelper<C[K]> : never;
  *   			}>
  *   			: never
