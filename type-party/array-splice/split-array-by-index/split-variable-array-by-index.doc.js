@@ -10,9 +10,9 @@
 
 /**
  * @import { GtOrEq, Subtract } from "ts-arithmetic";
- * @import { SplitFixedArrayByIndex } from "@/type-party/_common/array-slice/variable-length-array-slice-helper/array-splice/_common/split-fixed-array-by-index.doc.js";
+ * @import { SplitFixedArrayByIndex } from "@/type-party/array-splice/_common/split-fixed-array-by-index.doc.js";
  * @import { UnknownArray } from "@/type-party/_common/array-slice/variable-length-array-slice-helper/_common/unknown-array.doc.js";
- * @import { BuildTuple } from "@/type-party/_common/array-slice/variable-length-array-slice-helper/array-splice/_common/build-tuple.doc.js";
+ * @import { BuildTuple } from "@/type-party/array-splice/_common/build-tuple.doc.js";
  * @import { VariablePartOfArray } from "./split-variable-array-by-index/_exports.js";
  * @import { StaticPartOfArray } from "./_common/_exports.js";
  */

@@ -11,7 +11,7 @@
 /**
  * @import { IsNegative, Gt, And, Not } from "ts-arithmetic";
  * @import { IsEqual } from "./is-equal.doc.js";
- * @import { ArraySplice } from "./variable-length-array-slice-helper/_exports.js";
+ * @import { ArraySplice } from "@/type-party/array-splice.doc.js";
  * @import { ArraySliceByPositiveIndex } from "./_common/_exports.js";
  */
 

@@ -10,7 +10,7 @@
 
 /**
  * @import { UnknownArray } from "@/type-party/_common/array-slice/variable-length-array-slice-helper/_common/unknown-array.doc.js";
- * @import { StaticPartOfArray } from "@/type-party/_common/array-slice/variable-length-array-slice-helper/array-splice/split-array-by-index/_common/static-part-of-array.doc.js";
+ * @import { StaticPartOfArray } from "@/type-party/array-splice/split-array-by-index/_common/static-part-of-array.doc.js";
  */
 
 /**
