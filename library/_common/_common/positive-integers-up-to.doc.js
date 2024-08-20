@@ -9,19 +9,15 @@
 */
 
 /**
- * @import { Sort, UnionToTuple, PositiveIntegersUpToUnion } from "./positive-integers-up-to/_exports.js";
- * @import {GtOrEq} from "ts-arithmetic";
+ * @import { GtOrEq } from "ts-arithmetic";
+ * @import { Range  } from "@pumpn/type-party";
  */
 
 /**
  * @template {number} NumberTemplate
  * @typedef {(
  * GtOrEq<NumberTemplate, 1> extends 1
- * 	? Sort<
- * 		UnionToTuple<
- * 			PositiveIntegersUpToUnion<NumberTemplate>
- * 		>
- * 	>
+ * 	? Range<1, NumberTemplate>
  * 	: never
  * )} PositiveIntegersUpTo
  */

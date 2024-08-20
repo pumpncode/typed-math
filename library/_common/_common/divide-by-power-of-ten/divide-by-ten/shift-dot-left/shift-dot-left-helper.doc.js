@@ -10,7 +10,7 @@
 
 /**
  * @import { TrimZeros } from  "@/library/_common/_common/_common/trim-zeros.doc.js";
- * @import { Join } from  "@/type-party/_exports.js";
+ * @import { Join } from  "@pumpn/type-party";
  */
 
 /**

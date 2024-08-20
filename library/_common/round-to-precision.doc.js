@@ -13,7 +13,7 @@
  * @import { Round } from "@/library/_common/round.doc.js";
  * @import { DivideByPowerOfTen } from "./_common/divide-by-power-of-ten.doc.js";
  * @import { MultiplyByPowerOfTen } from "./_common/multiply-by-power-of-ten.doc.js";
- * @import { StringToArray } from "@/type-party/_exports.js";
+ * @import { StringToArray } from "@pumpn/type-party";
  * @import { SliceToPrecision } from "./round-to-precision/_exports.js";
  */
 

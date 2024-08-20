@@ -9,7 +9,7 @@
 */
 
 /**
- * @import { StringToNumber, Slice } from "@/type-party/_exports.js";
+ * @import { StringToNumber, Slice } from "@pumpn/type-party";
  */
 
 /**

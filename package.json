@@ -1,7 +1,11 @@
 {
 	"devDependencies": {
-		"@pumpn/eslint-config": "^15.0.6",
-		"eslint": "^9.8.0"
+		"@pumpn/eslint-config": "^15.1.2",
+		"eslint": "^9.9.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@pumpn/type-party": "npm:@jsr/pumpn__type-party@^0.1.16",
+		"ts-arithmetic": "^0.1.1"
+	}
 }

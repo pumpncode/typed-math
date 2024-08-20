@@ -10,10 +10,10 @@
 
 /**
  * @import { GtOrEq } from "ts-arithmetic";
- * @import { NumberRange } from "./positive-integers-up-to-union/_exports.js";
+ * @import { Range } from "@pumpn/type-party";
  */
 
 /**
  * @template {number} NumberTemplate
- * @typedef {GtOrEq<NumberTemplate, 1> extends 1 ? NumberRange<1, NumberTemplate> : number} PositiveIntegersUpToUnion
+ * @typedef {GtOrEq<NumberTemplate, 1> extends 1 ? Range<1, NumberTemplate> : number} PositiveIntegersUpToUnion
  */
